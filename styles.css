@@ -1,0 +1,859 @@
+* {
+  box-sizing: border-box;
+  font-family: "Gilda Display",Sans-serif;
+}
+
+body {
+  margin: 0;
+   background-color: white;
+   color: #3f495a;
+}
+a:hover{
+  text-decoration: none!important;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  font-family: "Gilda Display",Sans-serif;
+  font-size: 20px;
+  color: #3f495a;
+  min-height: 50px;
+  margin-bottom: 0px!important;
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 10;
+  border-radius: 0px!important;
+  height: 70px;
+
+}
+.header{
+    position: fixed!important; /* Set the navbar to fixed position */
+
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #3f495a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-right: 0px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+/*  font-size: 16px;*/  
+  border: none;
+  outline: none;
+  color: #3f495a;
+  padding: 14px 16px;
+  background-color: inherit;
+
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  width: 55%;
+  z-index: 10;
+  text-align:center;
+  float:center;
+  margin:auto;
+  color: #3f495a;
+}
+
+.dropdown-content {
+  background: white;
+  padding: 16px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create 2 equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  background-color: #fff;
+  height: 250px;
+  margin:auto;
+  color: #3f495a;
+}
+.line{
+	border-right: 1px solid #3f495a;
+}
+
+.column a {
+  float: none;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+/*.row{
+	text-align: center;
+}
+*/
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*NAV CSS ENDS*/
+
+.notice{
+	font-family: "Manrope",Sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #1C4DA1;
+    color: white ;
+}
+.dropbtn{
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-family: "Gilda Display",Sans-serif;
+  font-size: 20px;
+}
+.dropdown-content{
+  margin-right: 150px!important;
+
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 60%;
+}
+.content{
+   margin-top: 86px;
+   position: relative;
+}
+
+/*FOR SLIDESHOW*/
+
+* {box-sizing: border-box}
+body {margin:0}
+
+.mySlides {
+  display: none;
+  height: auto;
+}
+img {
+  vertical-align: middle;
+}
+.slide-img{
+  height: 80vh;
+} 
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: 50px; /*nb was -22px*/
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  /*transition: background-color 0.6s ease;*/
+  border: 2px solid white;
+  border-color: white;
+  
+
+  border: solid 2px white;
+  padding: .1em;
+  background:  content-box;
+}
+
+.active, .dot:hover {
+  background-color: white;
+  padding: 0px;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  opacity: 1!important;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*SLIDESHOW ENDS*/
+
+.dark-image {
+ filter: brightness(60%);
+}
+
+
+.bluebtn {
+   background-color: #1e4da1; /*nile blue*/
+   height:50px;
+   color:white;
+   border: none;
+   font-size: 0.4em!important;
+   padding: 15px 25px;
+   
+   font-family: sans-serif;
+       width: 200px;
+}
+
+.bluebtn:hover {
+   cursor:pointer;
+}
+
+.text{
+    font-size: 3em;
+    text-align: left;
+    font-family: 'Gilda Display','Sans-serif';
+    padding-left: 150px;
+    padding-top: 50px!important;
+}
+
+/*SLIDESHOW ENDS*/
+
+/*BOXES*/
+
+.blue-box{
+  background-color: #1e4da1; /*nile blue*/
+  width: 34%!important;
+  float: left;
+  color: white;
+  border-radius: 10px;
+  padding: 30px;
+  font-family: sans-serif!important;
+  animation-name: example;
+  /*animation duration in html page*/
+  position: relative;
+
+}
+.white-box{
+  border: 2px solid #1e4da1 ;
+  width: 34%!important;
+  float: left;
+  border-radius: 10px;
+  padding: 30px; 
+  font-family: sans-serif!important;
+  animation-name: example;
+  animation-duration: 2s;
+  position: relative;
+
+}
+@keyframes example {
+  
+  0%  { left:0px; top:300px;}
+  100% { left:0px; top:0px;}
+}
+.container{
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-family: sans-serif;
+}
+.blue-box hr, .white-box hr{
+  width: 90%;
+}
+p.ptext{
+  font-size: 20px; 
+  font-weight: 200; 
+  line-height: 32px; 
+  font-family: sans-serif
+}
+span.bluebox-learn{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24.6px;
+    letter-spacing: .2px;
+    font-family: Sans-serif; 
+}
+.h2-bluebox{
+  font-family: Sans-serif; 
+  font-size: 24px; 
+  font-weight: 500; 
+  line-height: 32px;
+}
+
+/*CHAT WITH STUDENTS SECTION*/
+
+/*div {
+  border: 2px solid red;
+}
+.wrapper {
+  position:relative;
+}
+img {
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+}*/
+.bw-container{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.bw-container *{
+  font-family: sans-serif!important;
+}
+.div-wrapper{
+  position: relative;
+  width: 30%;
+  border-radius: 5px;
+  border: 1px solid #D3D3D3;
+  font-family: sans-serif!important;
+}
+.img-wrapper{
+  border-radius: 50%;
+  position:absolute;
+  /*to center absolute image*/
+  top: 10px;
+  left:0;
+  right: 0;
+  margin: auto;
+  
+  border: 5px solid white;
+  width: 100px;
+  height: 100px;
+}
+.flag{
+  width: 24px;
+  height: 18px;
+  border: 2px solid white;
+  position: absolute;
+  
+  right: auto;
+  z-index: 1;
+  top: 90px;
+  right: 120px;
+
+}
+.img-wrapper2{
+  position: absolute;
+  top: 0;
+  /*to center absolute image*/
+  top: 10px;
+  left:0;
+  right: 0;
+  margin: auto;
+}
+.blue-rectangle{
+  height: 50px;
+  color: white;
+  background-color: #1c4da1; /*nile blue*/
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  font-size: 12px;
+  padding: 15px;
+  font-family: sans-serif;
+  text-align: left;
+
+}
+.white-rectangle{
+  padding: 20px;
+  font-family: sans-serif!important;
+  text-align: center;
+  font-size: 16px;
+  /*font-size: 14px;*/
+  padding-top: 80px;
+}
+.white-rectangle>span{
+  font-family: inherit;
+}
+.white-rectangle>hr{
+  border-top: ;
+  width: 95%;
+}
+.grey-text{
+  color: grey;
+  font-size: 0.9em;
+}
+.chat-box{
+  border-radius: 50px;
+  border: 1px solid  #1c4da1;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 40px;
+  padding: 0 30px;
+  width: 200px;
+  margin: auto;
+  color: #1c4da1;
+
+}
+.faculty-image {
+  filter: brightness(40%);
+  width: 100%;
+  height: 600px;
+  
+}
+.faculty-container{
+  position: relative;
+
+}
+.faculty-text {
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  padding-left: 100px;
+
+}
+.f-left{
+  margin: 0;
+  padding-top: 100px;
+  height: 100%;
+}
+.f-left>p{
+  font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+    font-family: sans-serif;
+}
+.f-right{
+  background: rgba(0, 0, 0, 0.3);
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 0px;
+  padding-left: 0px!important;
+  padding-top: 0px!important;
+  padding-right: 0px!important;
+    
+}
+
+.f-right>div{
+    font-family: "Gilda Display",Sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5em;
+    padding: 55px 30px;
+}
+.r{
+  border-right: 2px solid white;
+}
+.d{
+  border-bottom: 2px solid white;
+}
+
+/*ICON FLEXBOX LINE*/
+
+.blue-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0px 80px;
+  color: black;
+  font-family: "Gilda", sans-serif;
+  text-align: center;
+  justify-content: space-evenly;
+  justify-content: space-between;
+
+}
+.light-blue{
+  
+  margin-top: 40px;
+  width: 35%;
+  background-color: #F8F9FE ;
+  
+  padding: 30px;
+  padding-top: 60px;
+}
+.light-blue>img{
+  height: 84px;
+  width: 84px;
+}
+.light-blue >h3{
+  font-family: "Gilda Display",Sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 48px;
+}
+.light-blue > p{
+  color: #3f495a; /*grey*/
+    font-family: "Manrope",Sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+iframe{
+  margin: 0px 80px;
+  width: 89%;
+}
+.container-src{
+  display: flex;
+  padding: 120px;
+  background-color: #f8f9fe;
+  align-items: center;
+}
+.container-src>div{
+  background-color: #f2f5ff; /*light blue*/
+  padding: 62px 40px 62px 62px;
+  width: 800px;
+}
+.container-src>img{
+  height: auto;
+  aspect-ratio: auto 519 / 337.5;
+  width: 519px;
+}
+.container-src>div>p{
+  font-family: "Gilda Display",Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+
+}
+.container-src .bluetext{
+    font-family: Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #1c4da1; /*blue*/
+}
+.container-news{
+  display: flex;
+  text-align: left;
+  padding: 50px;
+  padding-top: 0px;
+}
+
+.container-news img{
+  width: 100%;
+}
+.container-news .newstext{
+  font-family: "Gilda Display",Sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+p.date{
+  color: #3f495ab0; /*#3f495a*/
+    font-family: Sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px;
+}
+p.btn{
+  border-radius: 50px;
+  width: auto;
+  background-color: #1C4DA1;
+  color: white;
+  padding: 2px 10px 2px;
+
+  font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+
+
+.numbers{
+  display: flex;
+  flex-direction: column;
+  color: #1C4DA1 ;
+  margin-left: 20px;
+  justify-content: space-between;
+}
+p.num{
+  font-family: "Gilda Display",Sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0px!important;
+    padding-bottom: 0px;
+    padding-top: 0px!important;
+}
+p.mon{
+      font-family: "Gilda Display",Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 5px!important;
+}
+.event-box{
+  text-align: left;
+  /*display: block;*/
+}
+.event-box>img{
+  width: 540px!important;
+  height: 400px;
+}
+
+.numbers{
+  display: flex;
+  flex-direction: column;
+  color: #1C4DA1 ;
+  margin-left: 20px;
+  height: 400px;
+}
+.numt{
+  display: flex;
+  flex-direction: column;
+  color: black ;
+  margin-left: 20px;
+  justify-content: space-evenly;
+  font-family: "Gilda Display",Sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5em;
+  width: 500px;
+}
+.numtext{
+  margin-bottom: 0px!important;
+}
+.numbers>p{
+  margin: 0px;
+}
+
+
+.clubs{
+  display: flex;
+  /*padding: 120px;*/
+  background-color: #f8f9fe;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+}
+
+.clubs img{
+  width: 100%;
+}
+.c-h2{
+  font-family: "Gilda Display",Sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 60px;
+}
+.c-p{
+      font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+    color: #000e27a3;
+}
+.words{
+  padding: 10px 120px!important;
+}
+
+/*footer*/
+
+.blue-footer{
+  width: 100%;
+  height: 550px;
+  padding-top: 50px;
+  padding-left: 120px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  background-color: #1C4DA1;
+  font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.contact{
+  color: white;
+  width: 55%;
+  border-bottom: 1px solid white;
+  height: 250px;
+  font-family: "Gilda Display",Sans-serif;
+  position: relative;
+  float: left;
+    
+}
+.list{
+  width: 30%;
+  color: white;
+  padding-left: 20px;
+  margin-left: 10px;
+  border-left: 1px solid white;
+  font-family: Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 28px;
+}
+
+.under-contact{
+  color: white;
+  width: 55%;
+  font-family: sans-serif;
+  padding-top: 20px;
+  position: relative;
+  float: left;
+}
+
+@keyframes example2 {
+  
+  0%  { right:700px; top:0px;}
+  100% { right:0px; top:0px;}
+}
+
+
+/*SIDE NAV*/
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 5;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+      width: 400px;
+    height: 80vh;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+ 
+  
+
+
+.side-nav{
+  float: left;
+  width: 100%;
+  text-align: left!important;
+  color: black;
+  background-color: white;
+  font-family: sans-serif;
+  margin-top: 10px;
+}
+
+
+.side-icon{
+  display: inline-block;
+  float: left;
+}
+
